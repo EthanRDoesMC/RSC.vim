@@ -10,3 +10,5 @@ Same as always. vim-plug for example:
 ```vim
 Plug 'EthanRDoesMC/RSC.vim'
 ```
+
+You'll need to run `set ft=rsc` on each open.
