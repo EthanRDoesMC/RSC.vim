@@ -9,14 +9,14 @@ endif
 
 syn match	rscLabel		/[-_$.A-Za-z0-9]\+\s*:/
 
-" i am not good at regex
-syn region	rscLabel		start=/\(LDAC\|STAC\|JMP\|JMPZ\)\+ / skip=/\(LDAC\|STAC\|JMP\|JMPZ\)\+ / end=/\w\*/
-
 syn match   	rscHex			/\$\^-\?0x\x\+/
 
 syn region 	rscComment		start=/;/ end=/$/
 
 syn keyword	rscInstruction		HALT LDAC STAC MVAC MOVR JMP JMPZ OUT SUB ADD INC CLAC AND OR ASHR NOT
+
+" i am not good at regex
+syn region	rscLabel		start=/\(LDAC\|STAC\|JMP\|JMPZ\)\+ / skip=/\(LDAC\|STAC\|JMP\|JMPZ\)\+ / end=/\w\*/
 
 hi def link	rscComment		Comment
 hi def link	rscLabel		Label
