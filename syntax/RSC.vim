@@ -13,14 +13,20 @@ syn match   	rscHex			/\$\?0x\x\+/
 
 syn region 	rscComment		start=/;/ end=/$/
 
-syn keyword	rscInstruction		HALT LDAC STAC MVAC MOVR JMP JMPZ OUT SUB ADD INC CLAC AND OR ASHR NOT
+syn keyword	rscInstruction		LDAC STAC MVAC MOVR CLAC
 
-" i am not good at regex
-syn match	rscLabel		/\$\(LDAC\|STAC\)\+\s\+\w\+/hs=s+5
+syn keyword	rscReturn		HALT OUT
+
+syn keyword	rscConditional		JMP JMPZ
+
+syn keyword	rscOperator		SUB ADD INC AND OR ASHR NOT
 
 hi def link	rscComment		Comment
-hi def link	rscLabel		Label
+hi def link	rscLabel		Identifier
 hi def link	rscHex			Number
 hi def link	rscInstruction		Statement
+hi def link	rscReturn		Exception
+hi def link	rscConditional		Conditional
+hi def link	rscOperator		Operator
 
 let b:current_syntax = "rsc"
