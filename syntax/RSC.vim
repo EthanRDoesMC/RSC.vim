@@ -7,7 +7,7 @@ elseif exists("b:current_syntax")
 	finish
 endif
 
-syn match	rscLabel		/\w\+:/he=e-1
+syn match	rscLabel		/\$\w\+:/he=e-1
 
 syn match   	rscHex			/\$\?0x\x\+/
 
@@ -15,7 +15,9 @@ syn region 	rscComment		start=/;/ end=/$/
 
 syn keyword	rscInstruction		LDAC STAC MVAC MOVR CLAC
 
-syn keyword	rscReturn		HALT OUT
+syn keyword	rscReturn		HALT
+
+syn keyword	rscOut			OUT
 
 syn keyword	rscConditional		JMP JMPZ
 
@@ -26,6 +28,7 @@ hi def link	rscLabel		Identifier
 hi def link	rscHex			Number
 hi def link	rscInstruction		Statement
 hi def link	rscReturn		Exception
+hi def link	rscOut			Special
 hi def link	rscConditional		Conditional
 hi def link	rscOperator		Operator
 
