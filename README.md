@@ -11,4 +11,4 @@ Same as always. vim-plug for example:
 Plug 'EthanRDoesMC/RSC.vim'
 ```
 
-You'll need to run `set ft=rsc` on each open.
+You'll need to run `set ft=rsc` when you want to use the highlighting. This is because loading RSC syntax by default for all text files is not a good idea.
