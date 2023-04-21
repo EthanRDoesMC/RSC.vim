@@ -9,7 +9,7 @@ endif
 
 syn match	rscLabel		/[-_$.A-Za-z0-9]\+\s*:/
 
-syn match   	rscHex			/\$\^-\?0x\x\+/
+syn match   	rscHex			/\$\?-\?0x\x\+/
 
 syn region 	rscComment		start=/;/ end=/$/
 
