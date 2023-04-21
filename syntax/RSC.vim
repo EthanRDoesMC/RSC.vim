@@ -7,9 +7,9 @@ elseif exists("b:current_syntax")
 	finish
 endif
 
-syn match	rscLabel		/[-_$.A-Za-z0-9]\+\s*:/
+syn match	rscLabel		/\w\+:/he=e-1
 
-syn match   	rscHex			/\$\?-\?0x\x\+/
+syn match   	rscHex			/\$\?0x\x\+/
 
 syn region 	rscComment		start=/;/ end=/$/
 
