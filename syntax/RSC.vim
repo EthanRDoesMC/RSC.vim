@@ -16,7 +16,7 @@ syn region 	rscComment		start=/;/ end=/$/
 syn keyword	rscInstruction		HALT LDAC STAC MVAC MOVR JMP JMPZ OUT SUB ADD INC CLAC AND OR ASHR NOT
 
 " i am not good at regex
-syn match	rscLabel		/\(LDAC\|STAC\)\+\w\+/
+syn match	rscLabel		/\$\(LDAC\|STAC\)\+\s\+\w\+/hs=s+5
 
 hi def link	rscComment		Comment
 hi def link	rscLabel		Label
