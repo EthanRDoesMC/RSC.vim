@@ -1,7 +1,7 @@
 # RSC.vim
 Syntax highlighting for the RSC
 
-![Preview](https://github.com/EthanRDoesMC/RSC.vim/blob/b609b2b3b1c05238546a09e96b58d0727dfa04ab/RSCvim%20preview.jpg)
+![Preview](https://github.com/EthanRDoesMC/RSC.vim/blob/e2f9b4ebf6ae02548ce3547c4e21d90df0f53748/RSCvim%20preview.jpg)
 
 (The colorscheme in this screenshot is [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim).)
 
